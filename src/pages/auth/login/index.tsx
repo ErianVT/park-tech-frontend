@@ -54,8 +54,6 @@ function LoginPage() {
                 ) : "Entrar"}
             </Button>
 
-            <Button variant="link" className="mt-2">Não tem uma conta? Crie agora</Button>
-
             <Link to="/register" className="text-[12px] text-primary font-medium hover:underline">Não tem uma conta? Crie agora</Link>
         </form>
 
