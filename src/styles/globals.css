@@ -1,0 +1,124 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+    --background: #F4F6F8;
+    --foreground: #1F3A5F;
+    --card: #FFFFFF;
+    --card-foreground: #1F3A5F;
+    --popover: #FFFFFF;
+    --popover-foreground: #1F3A5F;
+    --primary: #1F3A5F;
+    --primary-foreground: #FFFFFF;
+    --secondary: #F4F6F8;
+    --secondary-foreground: #1F3A5F;
+    --muted: #F4F6F8;
+    --muted-foreground: #6B7280;
+    --accent: #F4F6F8;
+    --accent-foreground: #1F3A5F;
+    --destructive: #C62828;
+    --destructive-foreground: #FFFFFF;
+    --border: #e0e0e0;
+    --input: #e0e0e0;
+    --ring: #1F3A5F;
+    --success: #2E7D32;
+    --success-foreground: #FFFFFF;
+    --warning: #F9A825;
+    --warning-foreground: #1F3A5F;
+    --radius: 6px;
+    --sidebar: #1F3A5F;
+    --sidebar-foreground: #FFFFFF;
+    --sidebar-primary: #FFFFFF;
+    --sidebar-primary-foreground: #1F3A5F;
+    --sidebar-accent: rgba(255, 255, 255, 0.2);
+    --sidebar-accent-foreground: #FFFFFF;
+    --sidebar-border: rgba(255, 255, 255, 0.1);
+    --sidebar-ring: #FFFFFF;
+    --sidebar-hover: #345481;
+}
+
+.dark {
+    --background: #1a1a2e;
+    --foreground: #FFFFFF;
+    --card: #16213e;
+    --card-foreground: #FFFFFF;
+    --popover: #16213e;
+    --popover-foreground: #FFFFFF;
+    --primary: #1F3A5F;
+    --primary-foreground: #FFFFFF;
+    --secondary: #1a1a2e;
+    --secondary-foreground: #FFFFFF;
+    --muted: #1a1a2e;
+    --muted-foreground: #9CA3AF;
+    --accent: #1a1a2e;
+    --accent-foreground: #FFFFFF;
+    --destructive: #C62828;
+    --destructive-foreground: #FFFFFF;
+    --border: #374151;
+    --input: #374151;
+    --ring: #1F3A5F;
+    --success: #2E7D32;
+    --success-foreground: #FFFFFF;
+    --warning: #F9A825;
+    --warning-foreground: #1F3A5F;
+    --sidebar: #0f0f23;
+    --sidebar-foreground: #FFFFFF;
+    --sidebar-primary: #FFFFFF;
+    --sidebar-primary-foreground: #1F3A5F;
+    --sidebar-accent: rgba(255, 255, 255, 0.1);
+    --sidebar-accent-foreground: #FFFFFF;
+    --sidebar-border: rgba(255, 255, 255, 0.1);
+    --sidebar-ring: #FFFFFF;
+}
+
+@theme inline {
+    --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+    --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-success: var(--success);
+    --color-success-foreground: var(--success-foreground);
+    --color-warning: var(--warning);
+    --color-warning-foreground: var(--warning-foreground);
+    --radius-sm: calc(var(--radius) - 2px);
+    --radius-md: var(--radius);
+    --radius-lg: calc(var(--radius) + 2px);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
