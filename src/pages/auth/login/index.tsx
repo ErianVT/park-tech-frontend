@@ -7,7 +7,7 @@ import { login } from "@/services/auth/login.service"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { AxiosError } from "axios"
 import { useForm } from "react-hook-form"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { toast } from "sonner"
 
 
@@ -56,6 +56,7 @@ function LoginPage() {
 
             <Button variant="link" className="mt-2">Não tem uma conta? Crie agora</Button>
 
+            <Link to="/register" className="text-[12px] text-primary font-medium hover:underline">Não tem uma conta? Crie agora</Link>
         </form>
 
     )
