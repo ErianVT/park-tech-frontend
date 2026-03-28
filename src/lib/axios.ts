@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = import.meta.env.VITE_BASE_URL;
+const baseURL = "https://park-tech-backend.cnyzce.easypanel.host"
 
 export const api = axios.create({
     baseURL: baseURL
